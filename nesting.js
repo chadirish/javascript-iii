@@ -37,7 +37,17 @@ var employees = [{
 //  3. Return the updated employee array.
 
 // Code here
-
+function employeeUpdater(){
+  for(var i=0; i < employees.length; i++){
+    if(employees[i]["firstName"] === "Theo"){
+      employees.splice(i,1);
+    }
+    if(employees[i]["firstName"] === "Lorie"){
+      employees[i]['department'] = "HR";
+    }
+  }
+  return employees;
+}
 
 
 
@@ -84,8 +94,8 @@ var cat = {
 
 // Code here
 
-var grumpyActivity;
-var fluffy2ndFriend;
+var grumpyActivity = cat.catFriends[0].activities[1];
+var fluffy2ndFriend = cat.catFriends[1].name;
 
 
 
